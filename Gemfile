@@ -6,6 +6,10 @@ gem 'puma'
 
 gem 'jquery-rails'
 
+group :development do
+  gem 'm'
+end
+
 group :test do
   gem 'capybara'
   gem 'minitest'
