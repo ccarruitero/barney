@@ -8,6 +8,7 @@ gem 'jquery-rails'
 
 group :development do
   gem 'm'
+  gem 'quiet_assets'
 end
 
 group :test do

@@ -14,6 +14,7 @@ This provides the following customizations:
 
 + No CoffeeScript.
 + m gem to run single tests with vim. [more info](https://github.com/frodsan/dotfiles/blob/master/vimrc#L158).
++ quiet_assets.
 
 ## Testing:
 
