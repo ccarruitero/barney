@@ -17,6 +17,7 @@ This provides the following customizations:
 + quiet_assets.
 + pry-rails.
 + generators config.
++ structure.sql > schema.rb.
 
 ## Testing:
 
