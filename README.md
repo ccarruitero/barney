@@ -18,6 +18,7 @@ This provides the following customizations:
 + pry-rails.
 + generators config.
 + structure.sql > schema.rb.
++ PGSQL strings with no limit.
 
 ## Testing:
 
