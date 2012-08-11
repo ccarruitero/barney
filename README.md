@@ -13,3 +13,9 @@ This provides the following customizations:
 ## Development:
 
 + No CoffeeScript.
+
+## Production:
+
++ Threadsafe mode enabled.
++ Puma.
++ Heroku FTW!
