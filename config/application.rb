@@ -62,5 +62,13 @@ module Betty
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    # Generators config
+    config.generators.do |g|
+      g.assets         false
+      g.helper         false
+      g.test_framework false
+      g.stylesheets    false
+    end
   end
 end
