@@ -14,4 +14,3 @@ Betty.Router = Ember.Router.extend({
     })
   })
 });
-
