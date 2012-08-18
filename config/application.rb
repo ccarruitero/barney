@@ -64,7 +64,7 @@ module Betty
     config.assets.version = '1.0'
 
     # Generators config
-    config.generators.do |g|
+    config.generators do |g|
       g.assets         false
       g.helper         false
       g.test_framework false
@@ -74,7 +74,7 @@ module Betty
     # Deletes postgresql String limit.
     initializer 'postgresql.no_default_string_limit' do
       ActiveSupport.on_load(:active_record) do
-        ActiveRecord::ConnectionAdapters::PostgreSQLAdapter::NATIVE_DATABASE_TYPES[:string].delete(:limit)
+        ActiveRecord::ConnectionAdapters::PostgreSQLAdapter::NATIVE_DATABASE_TYPES[:string].delete :limit
       end
     end
   end
