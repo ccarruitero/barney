@@ -25,28 +25,4 @@ class ActiveSupport::TestCase
 end
 
 class UnitTest < ActiveSupport::TestCase
-  def assert_valid model, *attrs
-    assert_model :valid, model, *attrs
-  end
-
-  def assert_invalid model, *attrs
-    assert_model :invalid, model, *attrs
-  end
-
-  private
-
-  def assert_model option, model, *attrs
-    result = model.send :"#{option}?"
-
-    if attrs.any?
-      validation = (option == :valid) ? :empty? : :any?
-
-      attrs.each do |attr|
-        assert model.errors[attr].send(validation),
-               "#{attr.to_s.inspect} attribute expected to be #{option}"
-      end
-    else
-      assert result, "#{model.class} is expected to be #{option}"
-    end
-  end
 end
