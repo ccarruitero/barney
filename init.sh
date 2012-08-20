@@ -66,17 +66,15 @@ change_rails_app_secret
 echo "✓ Setting the right README."
 mv README_APP.md README.md
 
+echo "✓ Removing init.sh"
+rm -f init.sh
+
 echo "✓ Initializing git."
 (git init; git add .; git commit -m "initial commit") &>/dev/null
 
 cd ".." &>/dev/null
 
-underscore_app_name=$(underscore $app_name)
 echo "✓ We hate camelCase right? Renaming directory to \"${underscore_app_name}\"."
-mv "$app_name" "$underscore_app_name"
+mv "$app_name" "$(underscore $app_name)"
 
-echo "✓ Removing init.sh"
-cd "$underscore_app_name" &>/dev/null
-rm -f init.sh
-
-echo "==> Ready to profit."
+echo "✓ Ready to profit."
