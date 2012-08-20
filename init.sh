@@ -63,6 +63,12 @@ mv "app/assets/javascripts/betty.js" "app/assets/javascripts/${underscore_app_na
 echo "✓ Renaming the app to \"${app_name}\"."
 rename_rails_app Betty $app_name
 
+echo "✓ Installing gems"
+bundle
+
+echo "✓ Creating the database"
+rake db:create
+
 echo "✓ Changing the app secret."
 change_rails_app_secret
 
