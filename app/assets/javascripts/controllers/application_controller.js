@@ -1,2 +1,3 @@
-Betty.ApplicationController = Ember.Controller.extend({
+Barney.ApplicationController = Ember.Controller.extend({
+
 });

@@ -1,7 +1,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: betty_development
+  database: barney_development
   pool: 5
   username: frodsan
   password:
@@ -9,7 +9,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: betty_test
+  database: barney_test
   pool: 5
   username: frodsan
   password:
@@ -17,7 +17,7 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: betty_production
+  database: barney_production
   pool: 5
   username: frodsan
   password:

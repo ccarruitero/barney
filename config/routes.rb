@@ -1,3 +1,3 @@
-Betty::Application.routes.draw do
+Barney::Application.routes.draw do
   root to: 'root#index'
 end

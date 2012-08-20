@@ -4,6 +4,6 @@
 //= require ember
 //= require ember-data
 //= require_self
-//= require betty
+//= require barney
 
-Betty = Ember.Application.create();
+Barney = Ember.Application.create();

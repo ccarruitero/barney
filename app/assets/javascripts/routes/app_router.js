@@ -1,4 +1,4 @@
-Betty.Router = Ember.Router.extend({
+Barney.Router = Ember.Router.extend({
   location: 'hash',
 
   root: Ember.Route.extend({

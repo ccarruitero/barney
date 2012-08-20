@@ -1,3 +1,3 @@
-Betty.ApplicationView = Ember.View.extend({
+Barney.ApplicationView = Ember.View.extend({
   templateName: 'application'
 });

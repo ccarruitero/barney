@@ -1,4 +1,4 @@
-# Betty: My Rails Template
+# Barney: My Rails Template ... Go get'em, tiger!
 
 It's gonna be ...
 

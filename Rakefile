@@ -2,4 +2,4 @@
 
 require File.expand_path '../config/application', __FILE__
 
-Betty::Application.load_tasks
+Barney::Application.load_tasks
