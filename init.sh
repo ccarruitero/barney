@@ -66,6 +66,9 @@ rename_rails_app Barney $app_name
 echo "✓ Installing gems."
 bundle
 
+echo "✓ Download ember and ember-data from master"
+rails g ember:install --head
+
 echo "✓ Creating the database."
 rake db:create
 
