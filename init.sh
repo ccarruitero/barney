@@ -55,10 +55,13 @@ esac
 app_name=`dirname $0`
 cd "$app_name" &>/dev/null
 
+underscore_app_name=$(underscore $app_name)
+
 rm -rf .git
+mv app/assets/javascripts/betty.js "app/assets/javascripts/\"${underscore_app_name}\".js"
 
 echo "✓ Renaming the app to \"${app_name}\"."
-rename_rails_app "Betty" "$app_name"
+rename_rails_app Betty $app_name
 
 echo "✓ Changing the app secret."
 change_rails_app_secret
@@ -75,6 +78,7 @@ echo "✓ Initializing git."
 cd ".." &>/dev/null
 
 echo "✓ We hate camelCase right? Renaming directory to \"${underscore_app_name}\"."
-mv "$app_name" "$(underscore $app_name)"
+mv $app_name $underscore_app_name
 
 echo "✓ Ready to profit."
+cd $underscore_app_name
