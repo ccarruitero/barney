@@ -1,8 +1,4 @@
-# Barney: My Rails Template ... Go get'em, tiger!
-
-It's gonna be ...
-
-![barney](http://assets.diylol.com/hfs/8bd/e4c/3f0/resized/barney-stinson-meme-generator-legen-dary-d9cba7.jpg)
+# Barney: My Rails Template
 
 ## How to Use:
 
@@ -16,3 +12,9 @@ the script ends, it underscores the dir name (`your_app_name`) and removes the
 ## Customizations:
 
 See [README_APP](https://github.com/frodsan/barney/blob/master/README_APP.md) for more information.
+
+## Famous Last Words:
+
+It's gonna be ...
+
+![barney](http://assets.diylol.com/hfs/8bd/e4c/3f0/resized/barney-stinson-meme-generator-legen-dary-d9cba7.jpg)
