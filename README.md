@@ -15,4 +15,4 @@ the script ends, it underscores the dir name (`your_app_name`) and removes the
 
 ## Customizations:
 
-See [README_APP](https://github.com/frodsan/betty/blob/master/README_APP.md) for more information.
+See [README_APP](https://github.com/frodsan/barney/blob/master/README_APP.md) for more information.
