@@ -66,7 +66,7 @@ rename_rails_app Barney $app_name
 echo "✓ Installing gems."
 bundle
 
-read -p "* Download ember from head? " -n 1
+read -p "* Download ember from head? [YyNn] " -n 1
 echo ""
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
