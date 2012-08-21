@@ -12,6 +12,7 @@ class AcceptanceTest < ActiveSupport::TestCase
 
   teardown do
     Capybara.reset_sessions!
+    Capybara.use_default_driver
   end
 
   def t *args
