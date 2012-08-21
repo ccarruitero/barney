@@ -66,8 +66,13 @@ rename_rails_app Barney $app_name
 echo "✓ Installing gems."
 bundle
 
-echo "✓ Download ember and ember-data from master"
-rails g ember:install --head
+read -p "* Download ember from head? " -n 1
+echo ""
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+  echo "✓ Downloading ember and ember-data from master."
+  rails g ember:install --head
+fi
 
 echo "✓ Creating the database."
 rake db:create
@@ -84,9 +89,8 @@ rm -f init.sh
 echo "✓ Initializing git."
 (git init; git add .; git commit -m "initial commit") &>/dev/null
 
-cd ".." &>/dev/null
-
 echo "✓ We hate camelCase right? Renaming directory to \"${underscore_app_name}\"."
+cd ".." &>/dev/null
 mv $app_name $underscore_app_name
 
 echo "✓ Ready to profit."
