@@ -4,7 +4,9 @@ class HomeTest < AcceptanceTest
   test 'home' do
     visit root_path
     assert_equal root_path, current_path
-    assert_have_css page, 'body'
+
+    # test minitest-capybara matchers.
+    assert_have_selector page, 'body'
   end
 
   test 'poltergeist' do
