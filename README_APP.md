@@ -64,6 +64,5 @@ test/
 
 ## How to use:
 
-    $ bundle
-    $ rake db:setup
+    $ rails s
     # PROFIT!
