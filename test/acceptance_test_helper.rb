@@ -15,6 +15,11 @@ class AcceptanceTest < ActiveSupport::TestCase
     Capybara.use_default_driver
   end
 
+  def self.test name, options = {}, &block
+    Capybara.current_driver = Capybara.javascript_driver if options[:js]
+    super name, &block
+  end
+
   def t *args
     I18n.t *args
   end

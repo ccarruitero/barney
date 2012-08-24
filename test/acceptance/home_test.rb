@@ -9,9 +9,7 @@ class HomeTest < AcceptanceTest
     assert_have_selector page, 'body'
   end
 
-  test 'poltergeist' do
-    Capybara.current_driver = Capybara.javascript_driver
-
+  test 'poltergeist', js: true do
     visit root_path
     assert page.evaluate_script '!!true'
   end
