@@ -2,7 +2,7 @@
 
 ## How to Use:
 
-    $ git clone git@github.com:frodsan/betty YourAppName
+    $ git clone git@github.com:frodsan/barney YourAppName
     $ YourAppName/init.sh
 
 This is shit but you need to make sure that the given app name is CamelCased. When
