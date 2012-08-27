@@ -2,12 +2,15 @@
 
 ## TL;DR
 
-+ [Ember.js](http://emberjs.com/) for Client-Side development.
+Because every tool plays a role:
+
++ [Ember.js](http://emberjs.com/) as the Client-Side MVC framework.
 + [ActiveModel Serializers](https://github.com/josevalim/active_model_serializers)
-  to customize serialization of data.
+  as the Custom Data Serializer.
 + [Rails 3.2.8](http://rubyonrails.org/) as an API Server.
++ [PostgreSQL](http://www.postgresql.org/) as the Database.
 + [Puma](http://puma.io/) as the Web Server.
-+ [Heroku](http://www.heroku.com/) for deployment.
++ [Heroku](http://www.heroku.com/) as the deployment platform.
 + [MiniTest](https://github.com/seattlerb/minitest) as the de facto testing framework.
 
 ## How to use:
