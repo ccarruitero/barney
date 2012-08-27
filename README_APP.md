@@ -1,6 +1,27 @@
-# Welcome to Rails!
+# Welcome to Barney!
 
-## Customizations:
+## TL;DR
+
++ [Ember.js](http://emberjs.com/) for Client-Side development.
++ [ActiveModel Serializers](https://github.com/josevalim/active_model_serializers)
+  to customize serialization of data.
++ [Rails 3.2.8](http://rubyonrails.org/) as an API Server.
++ [Puma](http://puma.io/) as the Web Server.
++ [Heroku](http://www.heroku.com/) for deployment.
++ [MiniTest](https://github.com/seattlerb/minitest) as the de facto testing framework.
+
+## How to use:
+
+Ready to code!
+
+    $ vim .
+    # PROFIT!
+
+If you want to use the ember's github version, you can execute:
+
+    $ rails g ember:install --head
+
+## Details
 
 This provides the following customizations:
 
@@ -61,8 +82,3 @@ test/
 + Threadsafe mode enabled.
 + Puma.
 + Heroku FTW!
-
-## How to use:
-
-    $ rails s
-    # PROFIT!
