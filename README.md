@@ -1,4 +1,6 @@
-# Barney: My Rails Template
+# Barney: My Ember/Rails Template
+
+This template is inspired in [Florent's rails_blank_app](https://github.com/Florent2/rails_blank_app).
 
 ## How to Use:
 
