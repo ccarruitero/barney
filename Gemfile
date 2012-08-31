@@ -9,7 +9,6 @@ gem 'puma'
 gem 'jquery-rails'
 
 group :development do
-  gem 'm'
   gem 'pry-rails'
   gem 'quiet_assets'
 end
