@@ -6,7 +6,6 @@ gem 'rails', '3.2.8'
 gem 'pg'
 gem 'puma'
 
-gem 'ember-rails', github: 'emberjs/ember-rails'
 gem 'jquery-rails'
 
 group :development do
@@ -24,6 +23,7 @@ group :test do
 end
 
 group :assets do
+  gem 'ember-rails', github: 'emberjs/ember-rails'
   gem 'sass-rails', '~> 3.2.3'
   gem 'uglifier',   '>= 1.0.3'
 end
