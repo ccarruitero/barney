@@ -5,6 +5,7 @@ ruby '1.9.3'
 gem 'rails', '3.2.8'
 gem 'pg'
 gem 'puma'
+gem 'strong_parameters'
 
 gem 'jquery-rails'
 
