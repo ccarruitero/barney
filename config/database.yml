@@ -3,7 +3,7 @@ development:
   encoding: unicode
   database: barney_development
   pool: 5
-  username: frodsan
+  username: <%= `whoami`.chomp %>
   password:
 
 test:
@@ -11,13 +11,5 @@ test:
   encoding: unicode
   database: barney_test
   pool: 5
-  username: frodsan
-  password:
-
-production:
-  adapter: postgresql
-  encoding: unicode
-  database: barney_production
-  pool: 5
-  username: frodsan
+  username: <%= `whoami`.chomp %>
   password:
