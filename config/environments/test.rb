@@ -34,7 +34,4 @@ Barney::Application.configure do
 
   # Print deprecation notices to the stderr.
   config.active_support.deprecation = :stderr
-
-  # Ember variant for sprockets to locate ember's assets.
-  config.ember.variant = :development
 end
