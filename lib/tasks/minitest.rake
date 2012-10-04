@@ -6,9 +6,9 @@ Rake::TestTask.new :test do |t|
   t.verbose = true
 end
 
-Rake::TestTask.new 'test:units' do |t|
+Rake::TestTask.new 'test:models' do |t|
   t.libs << 'test'
-  t.test_files = FileList['test/unit/*_test.rb']
+  t.test_files = FileList['test/models/*_test.rb']
   t.verbose = true
 end
 
