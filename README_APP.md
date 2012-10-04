@@ -4,9 +4,6 @@
 
 Because every tool plays a role:
 
-+ [Ember.js](http://emberjs.com/) as the Client-Side MVC framework.
-+ [ActiveModel Serializers](https://github.com/josevalim/active_model_serializers)
-  as the Custom Data Serializer.
 + [Rails 3.2.8](http://rubyonrails.org/) as an API Server.
 + [PostgreSQL](http://www.postgresql.org/) as the Database.
 + [Puma](http://puma.io/) as the Web Server.
@@ -19,10 +16,6 @@ Ready to code!
 
     $ vim .
     # PROFIT!
-
-If you want to use the ember's github version, you can execute:
-
-    $ rails g ember:install --head
 
 ## Details
 
@@ -62,8 +55,8 @@ This provides the following customizations:
 test/
   fixtures/
   lib/ Tests that don't require rails.
-  unit/ Models, ActiveModel::Model models, more models.
-  integration/ Controller tests (if i'm building an API?).
+  models/ Models, ActiveModel::Model models, more models.
+  api/ Controller tests (if i'm building an API?).
   acceptance/ Capybara magic to close my github issues.
     {user/admin/guest/owner} I prefer to divide them into user roles.
 ```
@@ -77,7 +70,7 @@ test/
   `acceptance_test_helper`.
 + I run Capybara with acceptance tests and ActionDispatch::IntegrationTest with
   integration tests.
-+ rake test, rake test:units, rake test:integrations, rake test:acceptances.
++ rake test, rake test:models, rake test:integrations, rake test:acceptances.
 
 ## Production:
 
