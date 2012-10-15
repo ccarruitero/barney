@@ -17,10 +17,8 @@ group :development do
 end
 
 group :test do
-  gem 'capybara'
   gem 'minitest'
 # gem 'minitest-activemodel'
-  gem 'minitest-capybara'
   gem 'poltergeist'
   gem 'turn'
 end
