@@ -21,5 +21,5 @@ class ActiveSupport::TestCase
   end
 end
 
-class UnitTest < ActiveSupport::TestCase
+class ModelTest < ActiveSupport::TestCase
 end
