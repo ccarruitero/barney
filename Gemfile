@@ -18,8 +18,7 @@ end
 
 group :test do
   gem 'minitest'
-# gem 'minitest-activemodel'
-  gem 'poltergeist'
+  gem 'minitest-activemodel'
   gem 'turn'
 end
 
