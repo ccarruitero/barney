@@ -4,8 +4,11 @@ require File.expand_path '../../config/environment', __FILE__
 
 require 'active_support/test_case'
 
-require 'turn'
-Turn.config { |c| c.natural = true }
+begin
+  require 'turn'
+  Turn.config { |c| c.natural = true }
+rescue LoadError
+end
 
 # Pass ARLOG=true to show SQL Queries
 ActiveRecord::Base.logger = Logger.new(STDOUT) if ENV['ARLOG']
