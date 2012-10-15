@@ -10,9 +10,6 @@ begin
 rescue LoadError
 end
 
-# Pass ARLOG=true to show SQL Queries
-ActiveRecord::Base.logger = Logger.new(STDOUT) if ENV['ARLOG']
-
 class ActiveSupport::TestCase
   include ActiveRecord::TestFixtures
 
