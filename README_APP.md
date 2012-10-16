@@ -9,6 +9,8 @@ Because every tool plays a role:
 + [Puma](http://puma.io/) as the Web Server.
 + [Heroku](http://www.heroku.com/) as the deployment platform.
 + [MiniTest](https://github.com/seattlerb/minitest) as the de facto testing framework.
++ [Strong Parameters](https://github.com/rails/strong_parameters) for mass assignment protection.
++ [Turbolinks-js](https://github.com/epiclabs/turbolinks-js).
 
 ## How to use:
 
