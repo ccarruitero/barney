@@ -6,7 +6,7 @@ gem 'rails', '3.2.8'
 gem 'pg'
 gem 'puma'
 gem 'strong_parameters'
-gem 'turbolinks-js'
+# gem 'turbolinks-js'
 
 gem 'jquery-rails'
 
