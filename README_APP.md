@@ -10,9 +10,8 @@ Because every tool plays a role:
 + [Heroku](http://www.heroku.com/) as the deployment platform.
 + [MiniTest](https://github.com/seattlerb/minitest) as the de facto testing framework.
 + [Strong Parameters](https://github.com/rails/strong_parameters) for mass assignment protection.
-+ [Turbolinks-js](https://github.com/epiclabs/turbolinks-js).
 
-## How to use:
+## How to use:
 
 Ready to code!
 
@@ -23,7 +22,7 @@ Ready to code!
 
 This provides the following customizations:
 
-## General:
+## General:
 
 + Rails 3.2.8.
 + Avoid parentheses.
@@ -31,7 +30,7 @@ This provides the following customizations:
 + Single Quotes > Double Quotes.
 + PostgreSQL by default.
 
-## Development:
+## Development:
 
 + No CoffeeScript.
 + quiet_assets.
@@ -40,7 +39,7 @@ This provides the following customizations:
 + structure.sql > schema.rb.
 + PGSQL strings with no limit.
 
-## Testing:
+## Testing:
 
 + MiniTest.
 + turn: Tests with pretty format.
