@@ -11,3 +11,17 @@ class ActiveSupport::TestCase
     :random
   end
 end
+
+class ActiveModel::TestCase
+  # include MiniTest::Matchers::ActiveModel
+end
+
+class ActionController::TestCase
+  def login_as user
+    @controller.stubs(:current_user).returns user
+  end
+
+  def t *args
+    I18n.t *args
+  end
+end
