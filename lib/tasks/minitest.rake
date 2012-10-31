@@ -13,6 +13,12 @@ namespace :test do
     t.verbose = true
   end
 
+  Rails::SubTestTask.new(:lib) do |t|
+    t.libs << 'test'
+    t.pattern = 'test/lib/**/*_test.rb'
+    t.verbose = true
+  end
+
   Rails::SubTestTask.new(models: 'test:prepare') do |t|
     t.libs << 'test'
     t.pattern = 'test/models/**/*_test.rb'
