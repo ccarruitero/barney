@@ -7,8 +7,6 @@ require 'support/mock_and_stub_model'
 class ActiveSupport::TestCase
   include ActiveSupport::Testing::MochaModule
 
-  fixtures :all
-
   def self.test_order
     :random
   end
