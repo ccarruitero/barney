@@ -11,7 +11,6 @@ gem 'strong_parameters'
 gem 'jquery-rails'
 
 group :development do
-  gem 'foreman'
   gem 'pry-rails'
   gem 'quiet_assets'
 end
