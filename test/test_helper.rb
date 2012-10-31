@@ -3,6 +3,7 @@ require File.expand_path '../../config/environment', __FILE__
 require 'rails/test_help'
 require 'support/mocha_module'
 require 'support/mock_and_stub_model'
+require 'minitest-activemodel'
 
 class ActiveSupport::TestCase
   include ActiveSupport::Testing::MochaModule
@@ -13,7 +14,7 @@ class ActiveSupport::TestCase
 end
 
 class ActiveModel::TestCase
-  # include MiniTest::Matchers::ActiveModel
+  include MiniTest::Matchers::ActiveModel
 end
 
 class ActionController::TestCase
