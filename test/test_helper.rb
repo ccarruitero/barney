@@ -3,6 +3,7 @@ require File.expand_path '../../config/environment', __FILE__
 require 'rails/test_help'
 require 'support/mocha_module'
 require 'support/mock_and_stub_model'
+require 'support/view_rendering'
 require 'minitest-activemodel'
 
 class ActiveSupport::TestCase
@@ -18,6 +19,8 @@ class ActiveModel::TestCase
 end
 
 class ActionController::TestCase
+  include ActiveSupport::Testing::ViewRendering
+
   def login_as user
     @controller.stubs(:current_user).returns user
   end
