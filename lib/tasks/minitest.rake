@@ -42,12 +42,6 @@ namespace :test do
     t.pattern = 'test/mailers/**/*_test.rb'
     t.verbose = true
   end
-
-  Rails::SubTestTask.new(integration: 'test:prepare') do |t|
-    t.libs << 'test'
-    t.pattern = 'test/integration/**/*_test.rb'
-    t.verbose = true
-  end
 end
 
 task default: :test
