@@ -1,7 +1,7 @@
 ENV['RAILS_ENV'] = 'test'
 require File.expand_path '../../config/environment', __FILE__
 require 'rails/test_help'
-require 'support/mocha_module'
+require 'mocha/setup'
 require 'support/mock_and_stub_model'
 require 'support/view_rendering'
 require 'minitest-activemodel'
