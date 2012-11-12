@@ -7,12 +7,12 @@ defaults: &defaults
 
 development:
   <<: *defaults
-  database: plataforma_development
+  database: barney_development
 
 test:
   <<: *defaults
-  database: plataforma_test
+  database: barney_test
 
 production:
   <<: *defaults
-  database: plataforma_production
+  database: barney_production
