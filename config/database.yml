@@ -1,15 +1,18 @@
-development:
+defaults: &defaults
   adapter: postgresql
   encoding: unicode
-  database: barney_development
   pool: 5
   username: <%= ENV['USER'] %>
   password:
 
+development:
+  <<: *defaults
+  database: plataforma_development
+
 test:
-  adapter: postgresql
-  encoding: unicode
-  database: barney_test
-  pool: 5
-  username: <%= ENV['USER'] %>
-  password:
+  <<: *defaults
+  database: plataforma_test
+
+production:
+  <<: *defaults
+  database: plataforma_production
