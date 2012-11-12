@@ -2,7 +2,7 @@ source :rubygems
 
 ruby '1.9.3'
 
-gem 'rails', '3.2.8'
+gem 'rails', '3.2.9'
 gem 'pg'
 gem 'puma'
 gem 'strong_parameters'
@@ -18,7 +18,7 @@ end
 group :test do
   gem 'minitest'
   gem 'minitest-activemodel'
-  gem 'mocha', github: 'freerange/mocha', require: false
+  gem 'mocha', require: false
   gem 'turn'
 end
 
