@@ -7,8 +7,6 @@ require 'support/view_rendering'
 require 'minitest-activemodel'
 
 class ActiveSupport::TestCase
-  include ActiveSupport::Testing::MochaModule
-
   def self.test_order
     :parallel
   end
