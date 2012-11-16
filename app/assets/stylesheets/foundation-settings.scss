@@ -106,3 +106,8 @@
 // $topBarNavToggleSize: 8px;
 
 @import 'foundation';
+
+// Highlight missing translations
+span.translation_missing {
+  background-color: yellow;
+}
