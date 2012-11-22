@@ -25,7 +25,7 @@ namespace :test do
     t.verbose = true
   end
 
-  Rails::SubTestTask.new(controllers: 'test:prepare') do |t|
+  Rails::SubTestTask.new(:controllers) do |t|
     t.libs << 'test'
     t.pattern = 'test/controllers/**/*_test.rb'
     t.verbose = true
