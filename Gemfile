@@ -6,7 +6,8 @@ gem 'rails', '3.2.9'
 gem 'pg'
 gem 'puma'
 gem 'strong_parameters'
-# gem 'activerecord-pita'
+
+gem 'activerecord-pita'
 # gem 'turbolinks-js'
 
 gem 'jquery-rails'
