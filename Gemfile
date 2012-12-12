@@ -19,7 +19,7 @@ end
 
 group :test do
   gem 'minitest'
-  gem 'minitest-activemodel'
+  gem 'minitest-activemodel', github: 'frodsan/minitest-activemodel'
   gem 'mocha', require: false
   gem 'turn'
 end
