@@ -4,7 +4,7 @@
 
 Because every tool plays a role:
 
-+ [Rails 3.2.8](http://rubyonrails.org/).
++ [Rails 3.2.9](http://rubyonrails.org/).
 + [PostgreSQL](http://www.postgresql.org/) as the Database.
 + [Puma](http://puma.io/) as the Web Server.
 + [Heroku](http://www.heroku.com/) as the deployment platform.
