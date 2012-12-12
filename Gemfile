@@ -10,7 +10,7 @@ gem 'activerecord-pita'
 gem 'strong_parameters'
 
 gem 'jquery-rails'
-gem 'turbolinks-js'
+gem 'turbolinks'
 
 group :development do
   gem 'pry-rails'
