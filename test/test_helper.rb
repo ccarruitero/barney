@@ -4,7 +4,6 @@ require 'rails/test_help'
 require 'mocha/setup'
 require 'support/mock_and_stub_model'
 require 'support/view_rendering'
-require 'minitest-activemodel'
 
 class ActiveSupport::TestCase
   include ActiveSupport::Testing::MochaModule
@@ -12,10 +11,6 @@ class ActiveSupport::TestCase
   def self.test_order
     :parallel
   end
-end
-
-class ActiveModel::TestCase
-  include MiniTest::Matchers::ActiveModel
 end
 
 class ActionController::TestCase
