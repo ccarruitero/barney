@@ -7,13 +7,13 @@ gem 'pg'
 gem 'puma'
 
 gem 'activerecord-pita'
+gem 'commands', github: 'rails/commands'
 gem 'strong_parameters'
 
 gem 'jquery-rails'
 gem 'turbolinks'
 
 group :development do
-  gem 'commands', github: 'rails/commands'
   gem 'pry-rails'
   gem 'quiet_assets'
 end
