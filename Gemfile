@@ -7,7 +7,7 @@ gem 'pg'
 gem 'puma'
 
 gem 'activerecord-pita'
-gem 'commands', github: 'rails/commands'
+gem 'commands'
 gem 'strong_parameters'
 
 gem 'jquery-rails'
