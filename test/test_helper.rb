@@ -17,7 +17,7 @@ class ActionController::TestCase
   include ActiveSupport::Testing::ViewRendering
 
   # Isolate database actions instead of perform transactions.
-  self.use_transactional_fixtures = false
+  # self.use_transactional_fixtures = false
 
   def login_as user
     @controller.stubs(:current_user).returns user
