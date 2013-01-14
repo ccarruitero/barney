@@ -9,7 +9,7 @@ class ActiveSupport::TestCase
   include ActiveSupport::Testing::MochaModule
 
   def self.test_order
-    :parallel
+    :random
   end
 end
 
