@@ -7,7 +7,6 @@ gem 'pg'
 gem 'puma'
 
 gem 'activerecord-pita'
-gem 'commands'
 gem 'strong_parameters'
 
 gem 'jquery-rails'
