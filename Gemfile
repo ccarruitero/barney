@@ -19,7 +19,6 @@ end
 group :test do
   gem 'minitest'
   gem 'mocha', require: false
-  gem 'turn'
 end
 
 group :assets do
