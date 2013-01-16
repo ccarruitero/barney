@@ -19,7 +19,6 @@ group :test do
 end
 
 group :assets do
-  gem 'compass-rails',   '~> 1.0.3'
   gem 'zurb-foundation', '~> 3.2.4'
 
   gem 'sprockets-rails', '~> 2.0.0.rc1'
