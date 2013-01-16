@@ -7,6 +7,8 @@ require 'support/view_rendering'
 class ActiveSupport::TestCase
   include ActiveSupport::Testing::MochaModule
 
+  ActiveRecord::Migration.check_pending!
+
   fixtures :all
 
   def self.test_order
@@ -16,10 +18,6 @@ end
 
 class ActionController::TestCase
   include ActiveSupport::Testing::ViewRendering
-
-  def login_as user
-    @controller.stubs(:current_user).returns user
-  end
 
   def t *args
     I18n.t *args

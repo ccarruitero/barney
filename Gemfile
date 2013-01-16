@@ -2,30 +2,28 @@ source :rubygems
 
 ruby '1.9.3'
 
-gem 'rails', '3.2.9'
+gem 'rails', '4.0.0.beta', github: 'rails/rails'
 gem 'pg'
 gem 'puma'
-
-gem 'strong_parameters'
 
 gem 'jquery-rails'
 gem 'turbolinks'
 
 group :development do
   gem 'pry-rails'
-  gem 'quiet_assets'
+  gem 'quiet_assets', github: 'evrone/quiet_assets'
 end
 
 group :test do
-  gem 'minitest'
   gem 'mocha', require: false
 end
 
 group :assets do
   gem 'compass-rails',   '~> 1.0.3'
-  gem 'zurb-foundation', '~> 3.2.0'
+  gem 'zurb-foundation', '~> 3.2.4'
 
-  gem 'coffee-rails',    '~> 3.2.1'
-  gem 'sass-rails',      '~> 3.2.3'
+  gem 'sprockets-rails', '~> 2.0.0.rc1'
+  gem 'coffee-rails',    '~> 4.0.0.beta', github: 'rails/coffee-rails'
+  gem 'sass-rails',      '~> 4.0.0.beta', github: 'rails/sass-rails'
   gem 'uglifier',        '>= 1.0.3'
 end
