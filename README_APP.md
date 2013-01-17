@@ -63,6 +63,7 @@ This provides the following customizations:
   module to `ActionController::TestCase` because I don't like to render views in
   controller testing. You can set the `render_views` option to `true` if you want
   the regular behaviour.
++ Don't use `test/integration`.
 
 ### Production:
 
