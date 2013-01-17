@@ -19,8 +19,6 @@ group :test do
 end
 
 group :assets do
-  gem 'zurb-foundation', '~> 3.2.4'
-
   gem 'sprockets-rails', '~> 2.0.0.rc1'
   gem 'coffee-rails',    '~> 4.0.0.beta', github: 'rails/coffee-rails'
   gem 'sass-rails',      '~> 4.0.0.beta', github: 'rails/sass-rails'
