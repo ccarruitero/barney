@@ -39,6 +39,7 @@ This provides the following customizations:
 + [foreman](https://github.com/ddollar/foreman) to run the application using a `Procfile`.
 + [dotenv](https://github.com/bkeepers/dotenv) to load environment variables from a `.env` file. The file is generated
   after the application structure is created.
++ Adds a `.ruby-version` file.
 
 ### Development:
 
