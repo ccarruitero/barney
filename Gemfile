@@ -25,5 +25,5 @@ group :assets do
   gem 'uglifier',        '>= 1.0.3'
 end
 
-gem 'foreman'
-gem 'dotenv', groups: [:development, :test, :assets]
+gem 'foreman', group: :development
+gem 'dotenv',  groups: [:development, :test, :assets]
