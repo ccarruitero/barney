@@ -6,7 +6,7 @@ module TestingSupport
   module MockAndStubModel
     module ActiveModelInstanceMethods
       def as_new_record
-        self.stubs(:persisted? => false, :id => nil)
+        self.stubs persisted?: false, id: nil
         self
       end
 
@@ -14,18 +14,18 @@ module TestingSupport
         true
       end
 
-      def respond_to?(message, include_private=false)
+      def respond_to? message, include_private = false
         message.to_s =~ /_before_type_cast$/ ? false : super
       end
     end
 
     module ActiveRecordInstanceMethods
       def destroy
-        self.stubs(:persisted? => false, :id => nil)
+        self.stubs persisted?: false, id: nil
       end
 
-      def [](key)
-        send(key)
+      def [] key
+        send key
       end
 
       def new_record?
@@ -50,10 +50,10 @@ module TestingSupport
     #   * A String representing a Class that does not exist
     #   * A String representing a Class that extends ActiveModel::Naming
     #   * A Class that extends ActiveModel::Naming
-    def mock_model(string_or_model_class, stubs = {})
+    def mock_model string_or_model_class, stubs = {}
       if String === string_or_model_class
-        if Object.const_defined?(string_or_model_class)
-          model_class = Object.const_get(string_or_model_class)
+        if Object.const_defined? string_or_model_class
+          model_class = Object.const_get string_or_model_class
         else
           model_class = Object.const_set(string_or_model_class, Class.new do
             extend ActiveModel::Naming
@@ -75,22 +75,22 @@ EOM
       end
 
       stubs = stubs.reverse_merge \
-        :id => next_id,
-        :destroyed? => false,
-        :marked_for_destruction? => false,
-        :blank? => false
+        id: next_id,
+        destroyed?: false,
+        marked_for_destruction?: false,
+        blank?: false
 
-      stubs = stubs.reverse_merge(:persisted? => !!stubs[:id])
+      stubs = stubs.reverse_merge persisted?: !!stubs[:id]
 
       stub("#{model_class.name}_#{stubs[:id]}", stubs).tap do |m|
         m.extend ActiveModelInstanceMethods
         m.singleton_class.__send__ :include, ActiveModel::Conversion
         m.singleton_class.__send__ :include, ActiveModel::Validations
-        if defined?(ActiveRecord)
+        if defined? ActiveRecord
           m.extend ActiveRecordInstanceMethods
           [:save, :update_attributes].each do |key|
             if stubs[key] == false
-              m.errors.stubs(:empty? => false)
+              m.errors.stubs empty?: false
             end
           end
         end
@@ -120,7 +120,7 @@ EOM
 
     module ActiveModelStubExtensions
       def as_new_record
-        self.stubs(:persisted? => false, :id => nil)
+        self.stubs persisted?: false, id: nil
         self
       end
 
@@ -131,7 +131,7 @@ EOM
 
     module ActiveRecordStubExtensions
       def as_new_record
-        self.__send__("#{self.class.primary_key}=", nil)
+        self.__send__ "#{self.class.primary_key}=", nil
         super
       end
 
@@ -140,7 +140,7 @@ EOM
       end
 
       def connection
-        raise IllegalDataAccessException.new("stubbed models are not allowed to access the database")
+        raise IllegalDataAccessException.new 'stubbed models are not allowed to access the database'
       end
     end
 
@@ -173,34 +173,34 @@ EOM
     #
     # == Examples
     #
-    #   stub_model(Person)
+    #   stub_model Person
     #   stub_model(Person).as_new_record
-    #   stub_model(Person, :to_param => 37)
+    #   stub_model(Person, to_param: 37)
     #   stub_model(Person) do |person|
     #     person.first_name = "David"
     #   end
-    def stub_model(model_class, stubs={})
+    def stub_model model_class, stubs = {}
       model_class.new.tap do |m|
         m.extend ActiveModelStubExtensions
         if defined?(ActiveRecord) && model_class < ActiveRecord::Base
           m.extend ActiveRecordStubExtensions
           primary_key = model_class.primary_key.to_sym
-          stubs = stubs.reverse_merge(primary_key => next_id)
-          stubs = stubs.reverse_merge(:persisted? => !!stubs[primary_key])
+          stubs = stubs.reverse_merge primary_key => next_id
+          stubs = stubs.reverse_merge persisted?: !!stubs[primary_key]
         else
-          stubs = stubs.reverse_merge(:id => next_id)
-          stubs = stubs.reverse_merge(:persisted? => !!stubs[:id])
+          stubs = stubs.reverse_merge id: next_id
+          stubs = stubs.reverse_merge persisted?: !!stubs[:id]
         end
-        stubs = stubs.reverse_merge(:blank? => false)
+        stubs = stubs.reverse_merge blank?: false
         stubs.each do |k,v|
-          m.__send__("#{k}=", stubs.delete(k)) if m.respond_to?("#{k}=")
+          m.__send__("#{k}=", stubs.delete(k)) if m.respond_to? "#{k}="
         end
-        m.stubs(stubs)
+        m.stubs stubs
         yield m if block_given?
       end
     end
 
-  private
+    private
 
     @@model_id = 1000
 

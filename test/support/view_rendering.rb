@@ -60,7 +60,7 @@ module TestingSupport
       private
 
       def _path_decorator path
-        EmptyTemplatePathSetDecorator.new(ActionView::PathSet.new(Array.wrap(path)))
+        EmptyTemplatePathSetDecorator.new ActionView::PathSet.new(Array.wrap(path))
       end
     end
   end
