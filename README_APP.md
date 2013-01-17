@@ -36,6 +36,9 @@ This provides the following customizations:
 + Add `lib` directory to the autoload paths.
 + [Turbolinks](https://github.com/rails/turbolinks) ✓.
 + [JQuery](http://jquery.com/) ✓.
++ [foreman](https://github.com/ddollar/foreman) to run the application using a `Procfile`.
++ [dotenv](https://github.com/bkeepers/dotenv) to load environment variables from a `.env` file. The file is generated
+  after the application structure is created.
 
 ### Development:
 
