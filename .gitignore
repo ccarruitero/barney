@@ -4,3 +4,6 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+# Ignore files used by dotenv.
+.env

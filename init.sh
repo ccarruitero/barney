@@ -77,6 +77,11 @@ mv README_APP.md README.md
 echo "✓ Removing init.sh"
 rm -f init.sh
 
+echo "✓ Generating .env file for ENV variables."
+touch .env
+echo PORT=5000 >> .env
+echo RACK_ENV=development >> .env
+
 echo "✓ Initializing git."
 (git init; git add .; git commit -m "initial commit") &>/dev/null
 

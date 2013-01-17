@@ -24,3 +24,6 @@ group :assets do
   gem 'sass-rails',      '~> 4.0.0.beta', github: 'rails/sass-rails'
   gem 'uglifier',        '>= 1.0.3'
 end
+
+gem 'foreman'
+gem 'dotenv', groups: [:development, :test, :assets]
