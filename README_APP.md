@@ -52,7 +52,14 @@ This provides the following customizations:
 + [Mocha](https://github.com/freerange/mocha) for mocking and stubbing.
 + Run tests in [random order](https://github.com/frodsan/barney/blob/master/test/test_helper.rb#L14).
 + Use `ActiveSupport::TestCase` as the default. For example for model testing.
++ Adds [TestHelpers::MockAndStubModel](https://github.com/frodsan/barney/blob/master/test/support/mock_and_stub_model.rb)
+  module to `ActiveSupport::TestCase` to stub or mock Active Model or Active Record
+  objects.
 + Use `ActionController::TestCase` for controller testing.
++ Adds [TestHelpers::ViewRendering](https://github.com/frodsan/barney/blob/master/test/support/view_rendering.rb)
+  module to `ActionController::TestCase` because I don't like to render views in
+  controller testing. You can set the `render_views` option to `true` if you want
+  the regular behaviour.
 
 ### Production:
 
