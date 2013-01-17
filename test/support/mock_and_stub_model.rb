@@ -1,4 +1,4 @@
-module TestingSupport
+module TestHelpers
   unless defined? IllegalDataAccessException
     class IllegalDataAccessException < StandardError; end
   end

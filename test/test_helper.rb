@@ -5,7 +5,7 @@ require 'support/mock_and_stub_model'
 require 'support/view_rendering'
 
 class ActiveSupport::TestCase
-  include TestingSupport::MockAndStubModel
+  include TestHelpers::MockAndStubModel
 
   ActiveRecord::Migration.check_pending!
 
@@ -17,7 +17,7 @@ class ActiveSupport::TestCase
 end
 
 class ActionController::TestCase
-  include TestingSupport::ViewRendering
+  include TestHelpers::ViewRendering
 
   def t *args
     I18n.t *args

@@ -1,6 +1,6 @@
 require 'active_support/core_ext/class/attribute'
 
-module TestingSupport
+module TestHelpers
   module ViewRendering
     extend ActiveSupport::Concern
 
