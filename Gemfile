@@ -10,6 +10,8 @@ gem 'jquery-rails'
 gem 'turbolinks'
 
 group :development do
+  gem 'foreman'
+  gem 'heroku'
   gem 'pry-rails'
   gem 'quiet_assets', github: 'evrone/quiet_assets'
 end
@@ -25,5 +27,4 @@ group :assets do
   gem 'uglifier',        '>= 1.0.3'
 end
 
-gem 'foreman', group: :development
 gem 'dotenv',  groups: [:development, :test, :assets]
