@@ -43,6 +43,7 @@ This provides the following customizations:
 
 ### Development:
 
++ Set `.ruby-version` to 1.9.3-p374.
 + [CoffeeScript](http://coffeescript.org/).
 + [Sass - Sassy CSS](http://sass-lang.com/).
 + [quiet_assets](https://github.com/evrone/quiet_assets) to mute assets pipeline log messages.
