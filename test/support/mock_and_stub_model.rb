@@ -88,7 +88,7 @@ EOM
         m.singleton_class.__send__ :include, ActiveModel::Validations
         if defined? ActiveRecord
           m.extend ActiveRecordInstanceMethods
-          [:save, :update_attributes].each do |key|
+          [:save, :update].each do |key|
             if stubs[key] == false
               m.errors.stubs empty?: false
             end
