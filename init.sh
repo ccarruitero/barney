@@ -39,7 +39,7 @@ rename_rails_app() {
 #   change_rails_app_secret
 change_rails_app_secret() {
   local new_secret=$(rake secret);
-  sed -i "" -e "s/'.*'/'$new_secret'/" "config/initializers/secret_token.rb"
+  sed -i "" -e "s/\".*\"/'$new_secret'/" "config/initializers/secret_token.rb"
 }
 
 case $1 in
