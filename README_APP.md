@@ -27,7 +27,8 @@ This provides the following customizations:
 ### General:
 
 + Rails 4.
-+ Only Ruby 1.9.3+ syntax.
++ Adds a `.ruby-version` file with Ruby `2.0.0-rc1` by default.
++ Only Ruby 1.9+ syntax.
 + Avoid unnecessary parentheses.
 + Single Quotes > Double Quotes.
 + [PostgreSQL](http://www.postgresql.org/) database in development, test and production (heroku).
@@ -39,7 +40,6 @@ This provides the following customizations:
 + [foreman](https://github.com/ddollar/foreman) to run the application using a `Procfile`.
 + [dotenv](https://github.com/bkeepers/dotenv) to load environment variables from a `.env` file. The file is generated
   after the application structure is created.
-+ Adds a `.ruby-version` file.
 
 ### Development:
 
