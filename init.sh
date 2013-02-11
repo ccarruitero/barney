@@ -81,6 +81,10 @@ echo "✓ Generating .env file for ENV variables."
 touch .env
 echo PORT=5000 >> .env
 echo RACK_ENV=development >> .env
+echo -n "Enter your editor of preference [ENTER]:"
+read editor
+echo BETTER_ERRORS_EDITOR=$editor >> .env
+
 
 echo "✓ Initializing git."
 (git init; git add .; git commit -m "initial commit") &>/dev/null

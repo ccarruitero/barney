@@ -10,6 +10,8 @@ gem 'jquery-rails'
 gem 'turbolinks'
 
 group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller'
   gem 'foreman'
   gem 'heroku'
   gem 'pry-rails'
