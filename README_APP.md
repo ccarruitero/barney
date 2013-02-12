@@ -28,7 +28,7 @@ This provides the following customizations:
 
 + Rails 4.
 + Adds a `.ruby-version` file with Ruby `2.0.0-rc1` by default.
-+ Only Ruby 1.9+ syntax.
++ Only Ruby 2.0+ syntax.
 + Avoid unnecessary parentheses.
 + Single Quotes > Double Quotes.
 + [PostgreSQL](http://www.postgresql.org/) database in development, test and production (heroku).
@@ -43,7 +43,7 @@ This provides the following customizations:
 
 ### Development:
 
-+ Set `.ruby-version` to 1.9.3-p374.
++ Set `.ruby-version` to `2.0.0-rc1`.
 + [CoffeeScript](http://coffeescript.org/).
 + [Sass - Sassy CSS](http://sass-lang.com/).
 + [quiet_assets](https://github.com/evrone/quiet_assets) to mute assets pipeline log messages.
