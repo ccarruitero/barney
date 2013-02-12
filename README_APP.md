@@ -27,7 +27,7 @@ This provides the following customizations:
 ### General:
 
 + Rails 4.
-+ Adds a `.ruby-version` file with Ruby `2.0.0-rc1` by default.
++ Adds a `.ruby-version` file with Ruby `2.0.0-rc2` by default.
 + Only Ruby 2.0+ syntax.
 + Avoid unnecessary parentheses.
 + Single Quotes > Double Quotes.
@@ -43,7 +43,7 @@ This provides the following customizations:
 
 ### Development:
 
-+ Set `.ruby-version` to `2.0.0-rc1`.
++ Set `.ruby-version` to `2.0.0-rc2`.
 + [CoffeeScript](http://coffeescript.org/).
 + [Sass - Sassy CSS](http://sass-lang.com/).
 + [quiet_assets](https://github.com/evrone/quiet_assets) to mute assets pipeline log messages.
