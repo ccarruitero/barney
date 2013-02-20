@@ -34,9 +34,9 @@ This provides the following customizations:
 + [PostgreSQL](http://www.postgresql.org/) database in development, test and production (heroku).
 + PGSQL strings with no limit. [Reference](https://github.com/frodsan/barney/blob/master/config/application.rb#L25).
 + [Puma](http://puma.io/) as the Web Server.
-+ Add `lib` directory to the autoload paths.
 + [Turbolinks](https://github.com/rails/turbolinks) ✓.
 + [JQuery](http://jquery.com/) ✓.
++ [Kaminari](https://github.com/amatsuda/kaminari) for pagination.
 + [foreman](https://github.com/ddollar/foreman) to run the application using a `Procfile`.
 + [dotenv](https://github.com/bkeepers/dotenv) to load environment variables from a `.env` file. The file is generated
   after the application structure is created.

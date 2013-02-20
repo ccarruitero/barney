@@ -9,6 +9,7 @@ gem 'puma'
 gem 'jquery-rails'
 gem 'turbolinks'
 
+gem 'kaminari'
 gem 'spring'
 
 group :development do
