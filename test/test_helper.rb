@@ -15,9 +15,7 @@ class ActiveSupport::TestCase
 
   fixtures :all
 
-  def self.test_order
-    :random
-  end
+  parallelize_me!
 end
 
 class ActionController::TestCase
