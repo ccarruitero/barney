@@ -7,3 +7,6 @@
 
 # Ignore files used by dotenv.
 .env
+
+# Ignore coverage results
+/coverage
