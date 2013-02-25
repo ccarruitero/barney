@@ -27,7 +27,7 @@ This provides the following customizations:
 ### General:
 
 + Rails 4.
-+ Adds a `.ruby-version` file with Ruby `2.0.0-rc2` by default.
++ Adds a `.ruby-version` file with Ruby `2.0.0-p0` by default.
 + Only Ruby 2.0+ syntax.
 + Avoid unnecessary parentheses.
 + Single Quotes > Double Quotes.
