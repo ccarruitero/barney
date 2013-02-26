@@ -26,7 +26,7 @@ This provides the following customizations:
 
 ### General:
 
-+ Rails 4.
++ Rails 4.0.0.beta1.
 + Adds a `.ruby-version` file with Ruby `2.0.0-p0` by default.
 + Only Ruby 2.0+ syntax.
 + Avoid unnecessary parentheses.
