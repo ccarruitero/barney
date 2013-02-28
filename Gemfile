@@ -10,6 +10,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 
 gem 'kaminari'
+gem 'simple_form', '~> 3.0.0.beta1'
 gem 'spring'
 
 group :development do
