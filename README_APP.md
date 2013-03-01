@@ -36,6 +36,7 @@ This provides the following customizations:
 + [Puma](http://puma.io/) as the Web Server.
 + [Turbolinks](https://github.com/rails/turbolinks) ✓.
 + [JQuery](http://jquery.com/) ✓.
++ [Simple Form](https://github.com/plataformatec/simple_form) - Rails forms made easy.
 + [Kaminari](https://github.com/amatsuda/kaminari) for pagination.
 + [foreman](https://github.com/ddollar/foreman) to run the application using a `Procfile`.
 + [dotenv](https://github.com/bkeepers/dotenv) to load environment variables from a `.env` file. The file is generated
