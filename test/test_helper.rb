@@ -5,6 +5,8 @@ require 'minitest/pride'
 require 'support/mock_and_stub_model'
 require 'support/view_rendering'
 
+Draper::ViewContext.test_strategy :fast
+
 class ActiveSupport::TestCase
   include TestHelpers::MockAndStubModel
 
