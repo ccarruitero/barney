@@ -58,7 +58,6 @@ This provides the following customizations:
 + General [test_helper](https://github.com/frodsan/barney/blob/master/test/test_helper.rb).
 + [Fixtures](http://edgeapi.rubyonrails.org/classes/ActiveRecord/FixtureSet.html) are great.
 + [Mocha](https://github.com/freerange/mocha) for mocking and stubbing.
-+ Generate code coverage report with [SimpleCov](https://github.com/colszowka/simplecov).
 + Run tests in [random order](https://github.com/frodsan/barney/blob/master/test/test_helper.rb#L14).
 + Use `ActiveSupport::TestCase` as the default. For example for model testing.
 + Adds [TestHelpers::MockAndStubModel](https://github.com/frodsan/barney/blob/master/test/support/mock_and_stub_model.rb)
