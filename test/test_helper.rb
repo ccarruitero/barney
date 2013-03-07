@@ -20,6 +20,8 @@ end
 class ActionController::TestCase
   include TestHelpers::ViewRendering
 
+  fixtures :all
+
   def t *args
     I18n.t *args
   end
