@@ -11,6 +11,7 @@ gem 'turbolinks'
 
 gem 'draper'
 gem 'kaminari'
+gem 'guachiman'
 gem 'simple_form', '~> 3.0.0.beta1'
 gem 'spring'
 
