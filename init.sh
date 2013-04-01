@@ -62,6 +62,9 @@ rm -rf .git
 echo "✓ Renaming the app to \"${app_name}\"."
 rename_rails_app Barney $app_name
 
+echo "✓ Remove Gemfile.lock"
+rm Gemfile.lock
+
 echo "✓ Installing gems."
 bundle
 
