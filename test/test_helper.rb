@@ -13,15 +13,11 @@ class ActiveSupport::TestCase
 
   ActiveRecord::Migration.check_pending!
 
-  fixtures :all
-
   parallelize_me!
 end
 
 class ActionController::TestCase
   include TestHelpers::ViewRendering
-
-  fixtures :all
 
   def t *args
     I18n.t *args
