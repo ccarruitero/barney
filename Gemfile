@@ -2,7 +2,8 @@ source 'https://rubygems.org'
 
 ruby '2.0.0'
 
-gem 'rails', '4.0.0.beta1'
+# TODO: Remove edge when Rails 4.0 is released
+gem 'rails', github: 'rails/rails'
 gem 'pg'
 gem 'puma'
 
