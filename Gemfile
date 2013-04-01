@@ -7,6 +7,10 @@ gem 'rails', github: 'rails/rails'
 gem 'pg'
 gem 'puma'
 
+gem 'coffee-rails', github: 'rails/coffee-rails'
+gem 'sass-rails',   github: 'rails/sass-rails'
+gem 'uglifier',     '>= 1.0.3'
+
 gem 'jquery-rails'
 gem 'turbolinks'
 
@@ -27,12 +31,6 @@ end
 group :test do
   gem 'mocha', require: false
   gem 'minitest-focus'
-end
-
-group :assets do
-  gem 'coffee-rails', '~> 4.0.0.beta1'
-  gem 'sass-rails',   '~> 4.0.0.beta1'
-  gem 'uglifier',     '>= 1.0.3'
 end
 
 group :doc do
