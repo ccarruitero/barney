@@ -35,4 +35,8 @@ group :assets do
   gem 'uglifier',     '>= 1.0.3'
 end
 
+group :doc do
+  gem 'sdoc', require: false
+end
+
 gem 'dotenv-rails',  groups: [:development, :test, :assets]
