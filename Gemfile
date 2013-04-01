@@ -13,6 +13,7 @@ gem 'uglifier',     '>= 1.0.3'
 
 gem 'jquery-rails'
 gem 'turbolinks'
+gem 'zurb-foundation', '~> 4.0.0'
 
 gem 'draper'
 gem 'kaminari'

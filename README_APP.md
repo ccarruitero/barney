@@ -36,6 +36,7 @@ This provides the following customizations:
 + [Puma](http://puma.io/) as the Web Server.
 + [Turbolinks](https://github.com/rails/turbolinks) ✓.
 + [JQuery](http://jquery.com/) ✓.
++ [Foundation](http://foundation.zurb.com/) front-end framework.
 + [Simple Form](https://github.com/plataformatec/simple_form) - Rails forms made easy.
 + [Draper](https://github.com/drapergem/draper) - View Models for Rails.
 + [Kaminari](https://github.com/amatsuda/kaminari) for pagination.
