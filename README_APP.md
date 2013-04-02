@@ -31,6 +31,7 @@ This provides the following customizations:
 + Only Ruby 2.0+ syntax.
 + Avoid unnecessary parentheses.
 + Single Quotes > Double Quotes.
++ Always precompile your assets before pushing to Heroku.
 + [PostgreSQL](http://www.postgresql.org/) database in development, test and production (heroku).
 + PGSQL strings with no limit. [Reference](https://github.com/frodsan/barney/blob/master/config/application.rb#L25).
 + [Puma](http://puma.io/) as the Web Server.
