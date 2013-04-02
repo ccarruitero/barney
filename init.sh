@@ -66,7 +66,7 @@ echo "✓ Remove Gemfile.lock"
 rm Gemfile.lock
 
 echo "✓ Installing gems."
-bundle
+bundle install --binstubs
 
 echo "✓ Creating the database."
 rake db:create
