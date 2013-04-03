@@ -15,6 +15,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'zurb-foundation', '~> 4.0.0'
 
+# gem 'active_model_serializers', github: 'rails-api/active_model_serializers'
 gem 'draper'
 gem 'kaminari'
 gem 'guachiman'
