@@ -13,7 +13,9 @@ class ActiveSupport::TestCase
 
   ActiveRecord::Migration.check_pending!
 
-  parallelize_me!
+  def self.test_order
+    :random
+  end
 end
 
 class ActionController::TestCase
