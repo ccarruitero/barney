@@ -42,4 +42,4 @@ end
 # Heroku compatibility for Rails 4
 gem 'rails_log_stdout', github: 'heroku/rails_log_stdout'
 
-gem 'dotenv-rails',  groups: [:development, :test, :assets]
+gem 'dotenv-rails',  groups: [:development, :test]
