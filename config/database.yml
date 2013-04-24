@@ -1,0 +1,18 @@
+defaults: &defaults
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  username: <%= ENV['USER'] %>
+  password:
+
+development:
+  <<: *defaults
+  database: barney_development
+
+test:
+  <<: *defaults
+  database: barney_test
+
+production:
+  <<: *defaults
+  database: barney_production
