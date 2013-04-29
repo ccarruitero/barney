@@ -15,7 +15,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'zurb-foundation', '~> 4.0'
 
-
+gem 'guachiman'
 gem 'simple_form', '~> 3.0.0.beta1'
 gem 'spring'
 

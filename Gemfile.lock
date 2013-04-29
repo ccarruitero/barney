@@ -63,6 +63,8 @@ GEM
     foreman (0.63.0)
       dotenv (>= 0.7)
       thor (>= 0.13.6)
+    guachiman (0.0.8)
+      railties (>= 3.2)
     hike (1.2.2)
     i18n (0.6.4)
     jquery-rails (2.2.1)
@@ -161,6 +163,7 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   dotenv-rails
   foreman
+  guachiman
   jquery-rails
   minitest-focus
   mocha
