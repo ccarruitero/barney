@@ -72,6 +72,8 @@ GEM
       slop (~> 3.4)
     pry-rails (0.2.2)
       pry (>= 0.9.10)
+    puma (1.6.3)
+      rack (~> 1.2)
     quiet_assets (1.0.2)
       railties (>= 3.1, < 5.0)
     rack (1.5.2)
@@ -138,6 +140,7 @@ DEPENDENCIES
   mocha
   pg
   pry-rails
+  puma
   quiet_assets
   rails (= 4.0.0.rc1)
   sass-rails (~> 4.0.0.rc1)
