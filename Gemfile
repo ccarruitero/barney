@@ -39,5 +39,5 @@ end
 gem 'dotenv-rails',  groups: [:development, :test]
 
 # Heroku compatibility gems
-gem 'rails_log_stdout', github: 'https://github.com/heroku/rails_log_stdout'
-gem 'rails3_serve_static_assets', github: 'https://github.com/heroku/rails3_serve_static_assets'
+gem 'rails_log_stdout', github: 'heroku/rails_log_stdout'
+gem 'rails3_serve_static_assets', github: 'heroku/rails3_serve_static_assets'
