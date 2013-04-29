@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Barney::Application.config.secret_key_base = '3539146a307a58afe5549fce5b7dd25ad2b20bb3e43192aa7a190726f8cafa8ee9a0f50c08fc491346a6fe2c20586151b98a0c807d5f6b21383d44e0aa202b38'
+Barney::Application.config.secret_key_base = Rails.env.production?? ENV['SECRET_TOKEN'] : '3539146a307a58afe5549fce5b7dd25ad2b20bb3e43192aa7a190726f8cafa8ee9a0f50c08fc491346a6fe2c20586151b98a0c807d5f6b21383d44e0aa202b38'
