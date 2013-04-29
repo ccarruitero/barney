@@ -13,6 +13,10 @@ gem 'uglifier',     '>= 1.3.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 
+group :test do
+  gem 'mocha', require: false
+end
+
 group :doc do
   gem 'sdoc', require: false
 end
