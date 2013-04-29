@@ -35,3 +35,5 @@ end
 group :doc do
   gem 'sdoc', require: false
 end
+
+gem 'dotenv-rails',  groups: [:development, :test]
