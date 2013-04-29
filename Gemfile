@@ -13,6 +13,10 @@ gem 'uglifier',     '>= 1.3.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 
+group :development do
+  gem 'quiet_assets'
+end
+
 group :test do
   gem 'mocha', require: false
   gem 'minitest-focus'
