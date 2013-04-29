@@ -15,6 +15,9 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'zurb-foundation', '~> 4.0'
 
+
+gem 'spring'
+
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
