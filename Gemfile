@@ -13,6 +13,7 @@ gem 'uglifier',     '>= 1.3.0'
 
 gem 'jquery-rails'
 gem 'turbolinks'
+gem 'zurb-foundation', '~> 4.0'
 
 group :development do
   gem 'better_errors'
