@@ -15,6 +15,7 @@ gem 'turbolinks'
 
 group :test do
   gem 'mocha', require: false
+  gem 'minitest-focus'
 end
 
 group :doc do

@@ -51,6 +51,8 @@ GEM
     metaclass (0.0.1)
     mime-types (1.23)
     minitest (4.7.3)
+    minitest-focus (1.0.0)
+      minitest (~> 4.4)
     mocha (0.13.3)
       metaclass (~> 0.0.1)
     multi_json (1.7.2)
@@ -113,6 +115,7 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
   jquery-rails
+  minitest-focus
   mocha
   pg
   rails (= 4.0.0.rc1)
