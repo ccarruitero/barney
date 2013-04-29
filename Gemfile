@@ -16,6 +16,7 @@ gem 'turbolinks'
 gem 'zurb-foundation', '~> 4.0'
 
 
+gem 'simple_form', '~> 3.0.0.beta1'
 gem 'spring'
 
 group :development do
