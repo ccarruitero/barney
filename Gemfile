@@ -14,6 +14,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 
 group :development do
+  gem 'pry-rails'
   gem 'quiet_assets'
 end
 
