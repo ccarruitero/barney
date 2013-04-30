@@ -14,6 +14,8 @@ Customizations:
 
 See [CUSTOMIZATIONS](https://github.com/frodsan/barney/blob/master/CUSTOMIZATIONS.md) for more information.
 
+Here is a commplete [diff](https://github.com/frodsan/barney/compare/3658f24...master) with a new Rails 4 application.
+
 Famous Last Words:
 ------------------
 
