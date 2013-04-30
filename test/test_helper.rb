@@ -16,4 +16,8 @@ end
 
 class ActionController::TestCase
   include TestHelpers::ViewRendering
+
+  def t *args
+    I18n.t *args
+  end
 end
