@@ -13,3 +13,7 @@ class ActiveSupport::TestCase
 
   fixtures :all
 end
+
+class ActionController::TestCase
+  include TestHelpers::ViewRendering
+end
